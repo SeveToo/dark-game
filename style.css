@@ -1,0 +1,63 @@
+body{
+  background: #151515;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+}
+
+.switch{
+  background: #151515;
+  width: 10px;
+  height: 20px;
+  position: absolute;
+  left: 50px;
+  top: 20px;
+  /* border: .1px solid #ddd; */
+  transform: translate(-50%, -50%);
+}
+
+.counter{
+  font-size: 40px;
+  color: #ddd;
+  text-align: right;
+  padding: 20px;
+  font-family: montserrat;
+}
+
+.btn {
+  width: 230px;
+  height: 70px;
+  font-size: 30px;
+  background: transparent;
+  border: none;
+  /* border-radius: 5px; */
+  color: grey;
+  font-weight: 400;
+  font-family: montserrat;
+  letter-spacing: 5px;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.btn::before { 
+  width: 13%;
+  height: 2px;
+  top: 2px;
+  background: grey;
+  position: absolute;
+  content: "";
+  transition: .5s;
+}
+
+.btn:hover:before { 
+  width: 50%;
+  height: 2px;
+  background: grey;
+  position: absolute;
+  content: "";
+  
+}
